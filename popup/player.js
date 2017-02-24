@@ -1,3 +1,4 @@
+// Adding click handler
 document.addEventListener(
   "click",
   (e) => {

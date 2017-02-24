@@ -1,3 +1,4 @@
+// Adding command handler
 browser.commands.onCommand.addListener(
     (command) => {
         // Getting vk tab
