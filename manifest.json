@@ -1,0 +1,48 @@
+{
+    "manifest_version": 2,
+    "name": "vk_music",
+    "version": "1.0",
+
+    "desription": "Allows to control vk music player from any tab",
+
+    "icons": {
+        "48": "icons/vk-48.png"
+    },
+
+    "permissions": [
+        "tabs",
+        "*://*.vk.com/*"
+    ],
+
+    "browser_action": {
+        "default_icon": "icons/vk-32.png",
+        "default_title": "vk_music",
+        "default_popup": "popup/player.html"
+    },
+
+    "background": {
+        "scripts": ["/background_scripts/hotkeys_handler.js"]
+    },
+
+    "commands": {
+        "prev": {
+            "suggested_key": {
+                "default": "Alt+Shift+PageDown"
+            },
+            "description": "Play previous track"
+        },
+        "play": {
+            "suggested_key": {
+                "default": "Alt+Shift+Home"
+            },
+            "description": "Toggle between play and pause"
+        },
+        "next": {
+            "suggested_key": {
+                "default": "Alt+Shift+End"
+            },
+            "description": "Play next track"
+        }
+    }
+
+}

@@ -1,0 +1,53 @@
+html, body {
+    width: 90px;
+}
+
+.audio_player {
+    width: 90px;
+    height: 30px;
+    background-color: #507299;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.audio_player div {
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.audio_player div:hover {
+    background-color: #d7e2ec;
+}
+
+.audio_player img {
+    cursor: pointer;
+    width: 20px;
+    height: auto;
+}
+
+.audio_player_play img {
+    margin-left: 1px;
+}
+
+div.audio_player_prev {
+    float: left;
+}
+
+div.audio_player_play {
+    display: inline-block;
+}
+
+div.audio_player_next {
+    float: right;
+}
+
+#audio_player_pause {
+    display: none;
+}
+
+#audio_player_play {
+    display: block;
+}
+
