@@ -1,12 +1,3 @@
-var gettingAllCommands = browser.commands.getAll();
-gettingAllCommands.then(
-    (commands) => {
-        for (command of commands) {
-            console.log(command);
-        }
-    }
-);
-
 browser.commands.onCommand.addListener(
     (command) => {
         // Getting vk tab

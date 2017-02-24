@@ -18,6 +18,10 @@ html, body {
 }
 
 .audio_player div:hover {
+    background-color: #305075;
+}
+
+.audio_player div:active {
     background-color: #d7e2ec;
 }
 
@@ -28,19 +32,24 @@ html, body {
 }
 
 .audio_player_play img {
-    margin-left: 1px;
+    width: 28px;
+    margin: 3px 0 3px 1px;
 }
 
 div.audio_player_prev {
     float: left;
+    margin: 5px 0 5px 5px;
 }
 
 div.audio_player_play {
+    width: 30px;
     display: inline-block;
+    margin: 5px 0 5px 0;
 }
 
 div.audio_player_next {
     float: right;
+    margin: 5px 5px 5px 0;
 }
 
 #audio_player_pause {
