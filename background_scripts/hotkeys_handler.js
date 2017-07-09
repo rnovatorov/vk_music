@@ -3,9 +3,9 @@ browser.commands.onCommand.addListener(
     (command) => {
         // Getting vk tab
         var getting_vk_tab = browser.tabs.query(
-          {
+            {
             url: "*://*.vk.com/*"
-          }
+            }
         );
 
         // Executing

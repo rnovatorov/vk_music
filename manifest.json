@@ -27,19 +27,19 @@
     "commands": {
         "prev": {
             "suggested_key": {
-                "default": "Alt+Shift+PageDown"
+                "default": "Alt+Shift+J"
             },
             "description": "Play previous track"
         },
         "play": {
             "suggested_key": {
-                "default": "Alt+Shift+Home"
+                "default": "Alt+Shift+K"
             },
             "description": "Toggle between play and pause"
         },
         "next": {
             "suggested_key": {
-                "default": "Alt+Shift+End"
+                "default": "Alt+Shift+L"
             },
             "description": "Play next track"
         }
