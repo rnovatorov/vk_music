@@ -1,22 +1,11 @@
-// Adding command handler
-browser.commands.onCommand.addListener(
-    (command) => {
-        // Getting vk tab
-        var getting_vk_tab = browser.tabs.query(
-            {
-            url: "*://*.vk.com/*"
-            }
+// Command handler
+browser.commands.onCommand.addListener((cmd) => {
+    browser.tabs.query({
+        url: "*://*.vk.com/*"
+    }).then((tabs) => {
+        browser.tabs.executeScript(
+            tabs[0].id,
+            {file: "/content_scripts/" + cmd + ".js"}
         );
-
-        // Executing
-        getting_vk_tab.then(
-            (tabs) => {
-                browser.tabs.executeScript(
-                    tabs[0].id, { 
-                        file: "/content_scripts/" + command + ".js"
-                    }
-                );
-            }
-        );
-    }
-);
+    });
+});
