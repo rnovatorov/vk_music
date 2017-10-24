@@ -1,4 +1,3 @@
-// Click handler
 document.addEventListener("click", (e) => {
     // Choose script
     if (e.target.classList.contains("audio_player_prev")) {
@@ -9,7 +8,7 @@ document.addEventListener("click", (e) => {
         var script = "next";
     }
 
-    // Execute
+    // Execute it
     if (typeof script !== undefined) {
         browser.tabs.query({
             url: "*://*.vk.com/*"

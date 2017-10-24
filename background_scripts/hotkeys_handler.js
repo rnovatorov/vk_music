@@ -1,4 +1,3 @@
-// Command handler
 browser.commands.onCommand.addListener((cmd) => {
     browser.tabs.query({
         url: "*://*.vk.com/*"
