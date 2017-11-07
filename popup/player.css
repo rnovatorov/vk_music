@@ -15,6 +15,7 @@ html, body {
     width: 20px;
     border-radius: 5px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .audio_player div:hover {
@@ -26,7 +27,6 @@ html, body {
 }
 
 .audio_player img {
-    cursor: pointer;
     width: 20px;
     height: auto;
 }
@@ -52,11 +52,6 @@ div.audio_player_next {
     margin: 5px 5px 5px 0;
 }
 
-#audio_player_pause {
-    display: none;
-}
-
 #audio_player_play {
     display: block;
 }
-
